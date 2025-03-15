@@ -1,4 +1,5 @@
-# 🛒 Proyecto: API Lista de Compras
+
+
 
 Este proyecto es una API sencilla desarrollada con **Node.js**, **Express** y **MongoDB** que permite gestionar fácilmente una lista de compras personalizada. Los usuarios pueden agregar, ver, modificar y eliminar productos de su lista.
 
@@ -155,3 +156,4 @@ Puedes usar **Postman** o herramientas similares para probar la API fácilmente.
 
 
 
+I see.
