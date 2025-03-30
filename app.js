@@ -15,9 +15,19 @@ app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 app.use(cookieParser());
 
+const config = require('./config/mongodb/mongodb-config.json');
+mongoose.connect(`mongodb+srv://${config.mongodb.user}:${config.mongodb.password}@${config.mongodb.server}/${config.mongodb.database}?retryWrites=true&w=majority`, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+})
+.then(() => console.log('✅ Conectado a MongoDB Atlas'))
+.catch(err => console.error('❌ Error conectando a MongoDB:', err));
+
 MongoDBUtil.init();
 
 app.use('/users', UserController);
+app.use('/products', ProductController);
+
 
 app.get('/', function (req, res) {
     var pkg = require(path.join(__dirname, 'package.json'));
