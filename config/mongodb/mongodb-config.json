@@ -1,6 +1,6 @@
 {
   "mongodb": {
-    "server": "mongodb+srv://mauramartinez:010101@shoppinglistdb.uo6yhwe.mongodb.net/?retryWrites=true&w=majority&appName=shoppinglistDB",
+    "server": "mongodb+srv://mauramartinez:<db_password>@shoppinglistdb.uo6yhwe.mongodb.net/?retryWrites=true&w=majority&appName=shoppinglistDB",
     "database": "shoppinglistDB",
     "user": "mauramartinez",
     "password": "010101"
