@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/Martinez-rosa/apiExpress/issues"
   },
-  "homepage": "https://github.com/Martinez-rosa/apiExpress#readme"
+  "homepage": "https://github.com/Martinez-rosa/apiExpress#readme",
+  "dependencies": {
+    "morgan": "^1.10.0"
+  }
 }
