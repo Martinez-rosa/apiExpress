@@ -3,6 +3,10 @@
 
     var express = require('express');
     var router = express.Router();
+    const ProductController = require('./controllers/productController');
+
+// Luego usar el controlador
+app.use('/products', ProductController);
 
     var UserMiddleware = require('./user.module')().UserMiddleware;
 
