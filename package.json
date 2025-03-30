@@ -1,18 +1,22 @@
 {
   "name": "apiexpress",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Este proyecto es una API sencilla desarrollada con **Node.js**, **Express** y **MongoDB** que permite gestionar fácilmente una lista de compras personalizada. Los usuarios pueden agregar, ver, modificar y eliminar productos de su lista.",
+  "main": "app.js",
+  "directories": {
+    "test": "tests"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Martinez-rosa/apiExpress.git"
+  },
   "author": "",
   "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "ejs": "^3.1.10",
-    "express": "^4.21.2",
-    "mongodb": "^6.15.0",
-    "mongoose": "^8.13.1"
-  }
+  "bugs": {
+    "url": "https://github.com/Martinez-rosa/apiExpress/issues"
+  },
+  "homepage": "https://github.com/Martinez-rosa/apiExpress#readme"
 }
