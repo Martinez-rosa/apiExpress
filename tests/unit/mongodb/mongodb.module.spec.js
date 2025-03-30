@@ -1,19 +1,20 @@
 var chai = require('chai');
 var expect = chai.expect;
 
-var MongoDBModule = require('../../../modules/mongodb/mongodb.module');
+var MongoDBUtil = require('../../../modules/mongodb/mongodb.module').MongoDBUtil;
 
-describe('MongoDBModule', function () {
+describe('MongoDBUtil', function () {
 
-    describe('mongodb.module file', function () {
+    describe('mongodb.util file', function () {
 
-        it('should read the mongodb.module file', function () {
-            expect(MongoDBModule).to.be.a('object');
+        it('should read the mongodb.util file', function () {
+            expect(MongoDBUtil).to.be.a('object');
         });
 
-        it('should confirm MongoDBUtil exist', function () {
-            expect(MongoDBModule.MongoDBUtil).to.be.a('object');
+        it('should confirm init function exist', function () {
+            expect(MongoDBUtil.init).to.be.a('function');
         });
+
     });
 
 });

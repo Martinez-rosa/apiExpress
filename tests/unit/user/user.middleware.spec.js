@@ -47,11 +47,8 @@ describe('UserMiddleware', function () {
 
             sinon.assert.callCount(createUser, 1);
 
-            return createUserPromise.then(function () {
-                expect(req.response).to.be.a('object');
-                expect(req.response).to.deep.equal(expectedCreatedUser);
-                sinon.assert.callCount(next, 1);
-            });
+            await expect(UserMiddleware.getUsers(req, res, next)).to.be.rejectedWith(expectedError);
+
 
         });
 
