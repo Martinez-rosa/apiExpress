@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var ProductMiddleware = require('../modules/products/product.module')().ProductMiddleware;
+var ProductMiddleware = require('../modules/products/npmproduct.module')().ProductMiddleware;
 
 router.post('/', ProductMiddleware.addProduct, function (req, res) {
     res.status(201).json(req.response);
